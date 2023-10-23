@@ -1,0 +1,21 @@
+* Hold Application State
+* Allow access to state via  getState()
+* Allow state to be updated via  dispatch(action)
+* Allow listeners via subscribe(listener) 
+* Handles unregister of listener via the function returned by subscribe(listener)
+
+
+import redux from 'redux'
+const redux=require('redux')
+const createStore=redux.createSore
+const store=createSore(reducer);    //createSore
+
+consol.log("Initial State",store.getState()) 
+
+store.subscribe(()=>consol.log("Initial State",store.getState())
+)
+
+store.dispatch(buyCake())
+
+const unsubscribe =store.subscribe(()=>consol.log("Initial State",store.getState())) //unsubscribe method
+unsubscribe()  //call unsubscribe function

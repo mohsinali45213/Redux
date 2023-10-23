@@ -1,0 +1,6 @@
+const combineReducers = redux.combineReducers
+const store = createStore(rootReducer)
+const rootReducer= combineReducers({
+    cake:cakeReducer,
+    iceCream:iceCreamReducer
+})

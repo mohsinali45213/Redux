@@ -1,0 +1,20 @@
+*A container where you can store your whole Application Data
+*so we call it to state management
+*it doesn't belong to component state
+*Like Storeroom
+
+:-- Redux Architecture --:
+
+:-View - GUI or React Display view
+:-Action - collect data from component or API
+:-Reducer - Get data from Action and sent to Store or Filter Data
+:-Store - State of complete Application
+
+:-- File And Folder In Structure --:
+
+:- Components -Home.js
+:- Containers -HomeContainer.js
+:- Services
+    Action    -Action.js
+    Reducers  -index.js,Reducer.js
+    constants

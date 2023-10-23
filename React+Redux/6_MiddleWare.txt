@@ -1,0 +1,6 @@
+const reduxLogger= require('redux-logger')
+const logger= reduxLogger.createLogger()
+const applyMiddleware=redux.applyMiddleware
+
+const store = createStore(rootReducer,applyMiddleware(logger))const unsubscribe=store.subscribe(()=>{})
+unsubscribe()

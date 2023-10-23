@@ -1,0 +1,24 @@
+//  (PreviousState,Action)=>newState
+
+const BUY_CAKE='BUY_CAKE'
+const BUY_ICECREAM='BUY_ICECREAM'
+  const initialState ={
+    numberOfCake:10,
+    numberOfIceCream:20
+  }
+  const reducer =(state=initialState,action)=>{
+    switch(action.type){
+      case BUY_CAKE:
+        return{
+          ...state,
+          numberOfCake:state.numberOfCake-1
+        }
+      case BUY_ICECREAM:
+        return{
+          ...state,
+          numberOfIceCream:state.numberOfIceCream-1
+        }
+        default:
+          return state
+    }
+  }
